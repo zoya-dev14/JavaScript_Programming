@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Marksheet & Grading System</h1>
+<script>
+let english = 70;
+let maths = 65;
+let science = 85;
+let computer = 90;
+let urdu = 60;
+
+// 1. Total Marks nikalna (Har subject 100 marks ka, toh total 500 hue)
+let totalMarks = english + maths + science + computer + urdu;
+
+// 2. Percentage nikalna
+let percentage = (totalMarks / 500) * 100;
+
+console.log("--- Marksheet Result ---");
+console.log("Total Marks: " + totalMarks + " / 500");
+console.log("Percentage: " + percentage + "%");
+
+// 3. Simple if-else ladder se Grade check karna
+if (percentage >= 80) {
+    console.log("Grade: A+ | Status: Pass");
+} else if (percentage >= 70) {
+    console.log("Grade: A | Status: Pass");
+} else if (percentage >= 60) {
+    console.log("Grade: B | Status: Pass");
+} else if (percentage >= 50) {
+    console.log("Grade: C | Status: Pass");
+} else {
+    console.log("Grade: F | Status: Fail");
+}
+
+    </script>
+</body>
+</html>

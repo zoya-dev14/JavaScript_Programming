@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+   <h1>Login & Registration System</h1>
+<script>
+    // 1. Naya account banane ki details
+let regEmail = "student@example.com";
+let regPassword = "password123";
+let confirmPassword = "password123";
+
+// 2. Login karne ki details
+let loginEmail = "student@example.com";
+let loginPassword = "password123";
+
+
+// --- LOGIC ---
+
+// Step A: Pehle check karo ke password theek hain ya nahi
+if (regPassword === confirmPassword) {
+    console.log("Registration Successful!");
+
+    // Step B: Ab check karo ke email match hoti hai ya nahi
+    if (loginEmail === regEmail) {
+        
+        // Step C: Aakhir mein check karo ke password sahi hai ya nahi
+        if (loginPassword === regPassword) {
+            console.log("Login Successful! Welcome back.");
+        } else {
+            console.log("Login Failed: Inccorect Password.");
+        }
+
+    } else {
+        console.log("Login Failed: Email is not registered");
+    }
+
+} else {
+    console.log("Registration Failed: passwords do not match.");
+}
+</script>
+</body>
+</html>                                                                    
